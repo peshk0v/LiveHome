@@ -3,6 +3,7 @@ import tomllib
 import json
 from time import sleep
 from art import tprint
+import tabulate
 
 def hello():
     print("Hello From CMDINTERFACE!")
@@ -97,3 +98,6 @@ def textAnimation(text, sleeep):
         color(i)
         aprint(ttla)
         asleep(sleeep)
+
+def atabulate(array):
+    tabulate.tabulate(array)

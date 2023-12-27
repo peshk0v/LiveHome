@@ -1,5 +1,4 @@
 import cmdinterface as ci
-import tabulate
 from colorama import init as coloramainit
 from colorama import Fore, Back, Style
 coloramainit()
@@ -53,7 +52,7 @@ if newJson[0] == 0:
             inputsgui.append(f"Input {i+1}")
 
         textToPrint = [inputsgui,amounts]
-        print(tabulate.tabulate(textToPrint))
+        print(ci.stabulate(textToPrint))
 
         for i in range(sett["limites"]["outputPorts"]):
             try:
@@ -75,5 +74,5 @@ if newJson[0] == 0:
             outputsgui.append(f"Output {i+1}")
 
         textToPrintO = [outputsgui,amountsO]
-        print(tabulate.tabulate(textToPrintO))
+        print(ci.stabulate(textToPrintO))
         ci.asleep(sett["settings"]["delayOfInput"])

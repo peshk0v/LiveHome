@@ -52,7 +52,7 @@ if newJson[0] == 0:
             inputsgui.append(f"Input {i+1}")
 
         textToPrint = [inputsgui,amounts]
-        print(ci.stabulate(textToPrint))
+        print(ci.atabulate(textToPrint))
 
         for i in range(sett["limites"]["outputPorts"]):
             try:
@@ -74,5 +74,5 @@ if newJson[0] == 0:
             outputsgui.append(f"Output {i+1}")
 
         textToPrintO = [outputsgui,amountsO]
-        print(ci.stabulate(textToPrintO))
+        print(ci.atabulate(textToPrintO))
         ci.asleep(sett["settings"]["delayOfInput"])

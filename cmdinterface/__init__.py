@@ -99,5 +99,5 @@ def textAnimation(text, sleeep):
         aprint(ttla)
         asleep(sleeep)
 
-def atabulate(array):
-    tabulate.tabulate(array)
+def atabulate(list):
+    return tabulate.tabulate(list)

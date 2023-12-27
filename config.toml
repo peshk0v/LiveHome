@@ -1,0 +1,14 @@
+[app]
+name = "LiveHome"
+version = 1.0
+
+[limites]
+inputPorts = 3
+outputPorts = 3
+
+[files]
+dataFile = "data.json"
+dataDir = "data"
+
+[settings]
+delayOfInput = 1
